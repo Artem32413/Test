@@ -4,15 +4,13 @@
 
     window.onload = function(event) {
         if (typeof oldOnload === 'function') {
-            oldOnload(event);  // Если есть предыдущий обработчик, вызываем его
+            oldOnload(event);  
         }
-        // Ваш код здесь
         console.log("DOM полностью загружен и готов к использованию!");
     };
 
     // Добавляем слушатель на событие DOMContentLoaded
     document.addEventListener('DOMContentLoaded', function() {
-        // Ваш код здесь
         console.log("DOMContentLoaded сработал!");
     });
 })();

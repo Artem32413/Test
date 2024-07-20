@@ -1,15 +1,18 @@
 * {
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
+   
 .container {
-    width: 600px;
-
+    width: 100%;
+    display: grid;
+    height: 100vh;
 }
 
 header {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     height: 50px;
@@ -19,7 +22,8 @@ header {
 main {
     display: grid;
     grid-template-columns: 200px 1fr;
-    height: 150px;
+    grid-template-rows: 1fr;
+    overflow-y: auto;
 }
 
 .block1 {
