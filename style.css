@@ -1,0 +1,61 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    width: 600px;
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border: 2px solid red;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    height: 150px;
+}
+
+.block1 {
+    overflow-y: auto;
+    padding: 10px;
+    border: 2px solid rgb(255, 102, 0);
+}
+
+.block2 {
+    overflow-y: auto;
+    padding: 10px;
+    border: 2px solid rgb(132, 0, 255);
+}
+
+footer {
+    border: 2px solid rgb(21, 255, 0);
+    height: 100px;
+}
+label{
+    display: grid;
+    grid-template-columns: 200px 50px;
+    padding-top: 30px;
+    justify-content: end;
+    justify-items: start;
+}
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+    transition: 0.5s;
+    border-radius: 4px;
+    width: 45px;
+}
+input{
+    padding-left: 10px;
+}
+button:hover{
+    background: rgb(216, 216, 216);
+}
